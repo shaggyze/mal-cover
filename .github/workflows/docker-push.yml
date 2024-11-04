@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build the Docker Image
-        run: docker build -t shaggyze/mal-cover:${{ github.sha }} .
+        run: docker build -t shaggyze/mal-cover:${{ github.sha }} /build/package/Dockerfile
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKER_HUB_TOKEN }}" | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
       - name: Push the Docker Image
