@@ -63,7 +63,7 @@ Encode it using [URL encode](https://www.urlencoder.org/).
 Then use it in endpoint as `style` param.
 
 ```
-https://cover.mal.rl404.com/rl404/anime?style=.animetitle%5Bhref%2A%3D%27%2F%7Bid%7D%2F%27%5D%3Abefore%7Bbackground-image%3Aurl%28%7Burl%7D%29%7D
+http://shaggysmovies.me:34001/shaggyze/anime?style=.animetitle%5Bhref%2A%3D%27%2F%7Bid%7D%2F%27%5D%3Abefore%7Bbackground-image%3Aurl%28%7Burl%7D%29%7D
 ```
 
 Good luck.
