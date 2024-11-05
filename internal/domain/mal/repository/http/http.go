@@ -30,9 +30,9 @@ func New(client http.Client) *Client {
 }
 
 // GetList to get anime/manga list.
-func (c *Client) GetList(ctx context.Context, username, mainType string, status) ([]entity.Entry, int, error) {
+func (c *Client) GetList(ctx context.Context, username, mainType string, status, genre) ([]entity.Entry, int, error) {
 	// User's url.
-	url := fmt.Sprintf("%s/%slist/%s/load.json?status=%s", c.malURL, mainType, username, status)
+	url := fmt.Sprintf("%s/%slist/%s/load.json?status=%s&genre=%s", c.malURL, mainType, username, status, genre)
 	offset := 0
 
 	// Loop them all.

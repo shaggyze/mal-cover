@@ -17,6 +17,7 @@ type GenerateCoverRequest struct {
 	Style    string   `validate:"style" mod:"trim,unescape"`
 	Size     string   `mod:"no_space,lcase"`
 	Status   interval `mod:"no_space,lcase"`
+	Genre    interval `mod:"no_space,lcase"`
 }
 
 // GenerateCover to generate css cover.
@@ -29,7 +30,7 @@ func (s *service) GenerateCover(ctx context.Context, data GenerateCoverRequest) 
 	if data.Status == nil {
 		data.Status = 7
 	}
-	list, code, err := s.mal.GetList(ctx, data.Username, data.Type, data.Status)
+	list, code, err := s.mal.GetList(ctx, data.Username, data.Type, data.Status, data.Genre)
 	if err != nil {
 		return "", code, stack.Wrap(ctx, err)
 	}
