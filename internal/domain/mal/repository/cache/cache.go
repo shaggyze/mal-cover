@@ -27,13 +27,13 @@ func New(cacher cache.Cacher, repo repository.Repository) *Cache {
 }
 
 // GetList to get anime/manga list from cache.
-func (c *Cache) GetList(ctx context.Context, username, mainType string, status, genre) (data []entity.Entry, code int, err error) {
+func (c *Cache) GetList(ctx context.Context, username string, mainType string, status int, genre int) (data []entity.Entry, code int, err error) {
 	key := utils.GetKey("list", username, mainType)
 	if c.cacher.Get(ctx, key, &data) == nil {
 		return data, http.StatusOK, nil
 	}
 
-	data, code, err = c.repo.GetList(ctx, username, mainType)
+	data, code, err = c.repo.GetList(ctx, username, mainType, status, genre)
 	if err != nil {
 		return nil, code, stack.Wrap(ctx, err)
 	}
