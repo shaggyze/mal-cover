@@ -35,9 +35,9 @@ func (s *service) GenerateCover(ctx context.Context, data GenerateCoverRequest) 
 	for i, l := range list {
 		if data.Size == "small" {
 			cssRow[i] = strings.NewReplacer("{id}", strconv.Itoa(l.ID), "{url}", strings.NewReplacer(".jpg", "t.jpg").Replace(l.Image)).Replace(data.Style)
-		} elseif data.Size == "medium" {
+		} else if data.Size == "medium" {
 			cssRow[i] = strings.NewReplacer("{id}", strconv.Itoa(l.ID), "{url}", l.Image).Replace(data.Style)
-		} elseif data.Size == "large" {
+		} else if data.Size == "large" {
 			cssRow[i] = strings.NewReplacer("{id}", strconv.Itoa(l.ID), "{url}", strings.NewReplacer(".jpg", "l.jpg").Replace(l.Image)).Replace(data.Style)
 		} else {
 			cssRow[i] = strings.NewReplacer("{id}", strconv.Itoa(l.ID), "{url}", l.Image).Replace(data.Style)
