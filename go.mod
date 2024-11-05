@@ -1,4 +1,4 @@
-module github.com/rl404/mal-cover
+module github.com/shaggyze/mal-cover
 
 go 1.21
 

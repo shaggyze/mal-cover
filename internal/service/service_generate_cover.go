@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/rl404/fairy/errors/stack"
-	"github.com/rl404/mal-cover/internal/utils"
+	"github.com/shaggyze/mal-cover/internal/utils"
 )
 
 // GenerateCoverRequest is request model for generate cover.

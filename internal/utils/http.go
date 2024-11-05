@@ -6,7 +6,7 @@ import (
 	"runtime/debug"
 
 	"github.com/rl404/fairy/errors/stack"
-	"github.com/rl404/mal-cover/internal/errors"
+	"github.com/shaggyze/mal-cover/internal/errors"
 )
 
 // RespondWithCSS to write response with CSS format.

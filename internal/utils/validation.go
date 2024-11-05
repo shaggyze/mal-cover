@@ -6,7 +6,7 @@ import (
 
 	"github.com/rl404/fairy/validation"
 	"github.com/rl404/fairy/validation/playground"
-	"github.com/rl404/mal-cover/internal/errors"
+	"github.com/shaggyze/mal-cover/internal/errors"
 )
 
 var val validation.Validator

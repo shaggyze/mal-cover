@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/rl404/mal-cover/internal/domain/mal/repository"
+	"github.com/shaggyze/mal-cover/internal/domain/mal/repository"
 )
 
 // Service contains functions for service.

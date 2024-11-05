@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/rl404/mal-cover/internal/utils"
+	"github.com/shaggyze/mal-cover/internal/utils"
 	"github.com/spf13/cobra"
 )
 

@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/rl404/mal-cover/internal/domain/mal/entity"
+	"github.com/shaggyze/mal-cover/internal/domain/mal/entity"
 )
 
 // Repository contains functions for mal domain.

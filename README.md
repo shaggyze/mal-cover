@@ -5,7 +5,7 @@ Simple API to generate image cover CSS for MyAnimeList list.
 ## Quick Installation
 
 ```bash
-docker run -p 34001:34001 rl404/mal-cover
+docker run -p 34001:34001 shaggyze/mal-cover
 ```
 
 ### Environment Variables
@@ -29,8 +29,8 @@ docker run -p 34001:34001 rl404/mal-cover
 
 Will generate CSS according to MyAnimeList username and type. For example:
 
-- `https://cover.mal.rl404.com/rl404/anime?style=...`
-- `https://cover.mal.rl404.com/rl404/manga?style=...`
+- `https://cover.mal.shaggyze.com/shaggyze/anime?style=...`
+- `https://cover.mal.shaggyze.com/shaggyze/manga?style=...`
 
 ## Styling
 

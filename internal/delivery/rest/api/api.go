@@ -7,8 +7,8 @@ import (
 	"github.com/newrelic/go-agent/v3/newrelic"
 	"github.com/rl404/fairy/log"
 	"github.com/rl404/fairy/monitoring/newrelic/middleware"
-	"github.com/rl404/mal-cover/internal/service"
-	"github.com/rl404/mal-cover/internal/utils"
+	"github.com/shaggyze/mal-cover/internal/service"
+	"github.com/shaggyze/mal-cover/internal/utils"
 )
 
 // API contains all functions for api endpoints.

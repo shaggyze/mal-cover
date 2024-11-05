@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/rl404/fairy/errors/stack"
-	"github.com/rl404/mal-cover/internal/domain/mal/entity"
-	"github.com/rl404/mal-cover/internal/errors"
-	"github.com/rl404/mal-cover/internal/utils"
+	"github.com/shaggyze/mal-cover/internal/domain/mal/entity"
+	"github.com/shaggyze/mal-cover/internal/errors"
+	"github.com/shaggyze/mal-cover/internal/utils"
 )
 
 // Client contains functions for mal http client.

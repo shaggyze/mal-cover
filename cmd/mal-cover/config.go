@@ -6,8 +6,8 @@ import (
 
 	"github.com/joho/godotenv"
 	"github.com/kelseyhightower/envconfig"
-	"github.com/rl404/mal-cover/internal/utils"
-	"github.com/rl404/mal-cover/pkg/cache"
+	"github.com/shaggyze/mal-cover/internal/utils"
+	"github.com/shaggyze/mal-cover/pkg/cache"
 )
 
 type config struct {

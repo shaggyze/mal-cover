@@ -3,7 +3,7 @@ version: "2.4"
 services:
   mal-cover:
     container_name: mal-cover
-    image: rl404/mal-cover:latest
+    image: shaggyze/mal-cover:latest
     restart: always
     env_file: ./../.env
     network_mode: host

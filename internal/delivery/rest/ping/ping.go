@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/rl404/mal-cover/internal/utils"
+	"github.com/shaggyze/mal-cover/internal/utils"
 )
 
 // Ping contains basic routes.
@@ -26,7 +26,7 @@ func (p Ping) Register(r chi.Router) {
 }
 
 func (p Ping) handleRoot(w http.ResponseWriter, _ *http.Request) {
-	utils.RespondWithCSS(w, http.StatusOK, "it's working\n\nfor more info: https://github.com/rl404/mal-cover", nil)
+	utils.RespondWithCSS(w, http.StatusOK, "it's working\n\nfor more info: https://github.com/shaggyze/mal-cover", nil)
 }
 
 func (p Ping) handlePing(w http.ResponseWriter, _ *http.Request) {
