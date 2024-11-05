@@ -49,7 +49,7 @@ Your list's image cover style is like this.
 
 ```css
 .animetitle[href*="/37716/"]:before {
-  background-image: url(https://myanimelist.cdn-dena.com/images/anime/1889/93555.jpg);
+  background-image: url(https://cdn.myanimelist.net/images/anime/1889/93555l.jpg);
 }
 ```
 
