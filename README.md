@@ -32,6 +32,13 @@ Will generate CSS according to MyAnimeList username and type. For example:
 - `http://shaggysmovies.me:34001/shaggyze/anime?style=...`
 - `http://shaggysmovies.me:34001/shaggyze/manga?style=...`
 
+### `&{size}=`
+
+Will generate CSS according to MyAnimeList image sizes `small`, `medium`, and `large`. For example:
+
+- `http://shaggysmovies.me:34001/shaggyze/anime?style=...&size=small`
+- `http://shaggysmovies.me:34001/shaggyze/manga?style=...&size=medium`
+
 ## Styling
 
 **This is the most important part**. The endpoint needs a `style` param. The `style` value depends on how your list show your anime/manga cover image.
