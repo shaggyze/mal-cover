@@ -40,7 +40,7 @@ func (s *service) GenerateCover(ctx context.Context, data GenerateCoverRequest) 
 		} else if data.Size == "large" {
 			cssRow[i] = strings.NewReplacer("{id}", strconv.Itoa(l.ID), "{url}", strings.NewReplacer(".jpg", "l.jpg").Replace(l.Image)).Replace(data.Style)
 		} else {
-			cssRow[i] = strings.NewReplacer("{id}", strconv.Itoa(l.ID), "{url}", l.Image).Replace(data.Style)
+			cssRow[i] = strings.NewReplacer("{id}", strconv.Itoa(l.ID), "{url}", strings.NewReplacer(".jpg", "l.jpg").Replace(l.Image)).Replace(data.Style)
 		}
 	}
 
