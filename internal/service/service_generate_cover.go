@@ -12,12 +12,12 @@ import (
 
 // GenerateCoverRequest is request model for generate cover.
 type GenerateCoverRequest struct {
-	Username string   `validate:"required" mod:"no_space"`
-	Type     string   `validate:"required,oneof=anime manga" mod:"no_space,lcase"`
-	Style    string   `validate:"style" mod:"trim,unescape"`
-	Size     string   `mod:"no_space,lcase"`
-	Status   interval `mod:"no_space,lcase"`
-	Genre    interval `mod:"no_space,lcase"`
+	Username string `validate:"required" mod:"no_space"`
+	Type     string `validate:"required,oneof=anime manga" mod:"no_space,lcase"`
+	Style    string `validate:"style" mod:"trim,unescape"`
+	Size     string `mod:"no_space,lcase"`
+	Status   int `mod:"no_space,lcase"`
+	Genre    int `mod:"no_space,lcase"`
 }
 
 // GenerateCover to generate css cover.
