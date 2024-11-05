@@ -14,7 +14,6 @@ func ImageURLCleaner(str string) string {
 	}
 
 	str = strings.Replace(str, "v.jpg", ".jpg", -1)
-	str = strings.Replace(str, "t.jpg", ".jpg", -1)
 	str = strings.Replace(str, "_thumb.jpg", ".jpg", -1)
 	str = strings.Replace(str, "userimages/thumbs", "userimages", -1)
 

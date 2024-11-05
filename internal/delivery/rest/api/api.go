@@ -46,11 +46,13 @@ func (api *API) handleGetCover(w http.ResponseWriter, r *http.Request) {
 	username := chi.URLParam(r, "user")
 	mainType := chi.URLParam(r, "type")
 	style := r.URL.Query().Get("style")
+	size := r.URL.Query().Get("size")
 
 	css, code, err := api.service.GenerateCover(r.Context(), service.GenerateCoverRequest{
 		Username: username,
 		Type:     mainType,
 		Style:    style,
+		Size:     size,
 	})
 
 	utils.RespondWithCSS(w, code, css, err)
