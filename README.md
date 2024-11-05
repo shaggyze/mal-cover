@@ -29,8 +29,8 @@ docker run -p 34001:34001 shaggyze/mal-cover
 
 Will generate CSS according to MyAnimeList username and type. For example:
 
-- `https://cover.mal.shaggyze.com/shaggyze/anime?style=...`
-- `https://cover.mal.shaggyze.com/shaggyze/manga?style=...`
+- `http://shaggysmovies.me:34001/shaggyze/anime?style=...`
+- `http://shaggysmovies.me:34001/shaggyze/manga?style=...`
 
 ## Styling
 
