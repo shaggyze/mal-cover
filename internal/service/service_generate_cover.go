@@ -16,8 +16,8 @@ type GenerateCoverRequest struct {
 	Type     string `validate:"required,oneof=anime manga" mod:"no_space,lcase"`
 	Style    string `validate:"style" mod:"trim,unescape"`
 	Size     string `mod:"no_space,lcase"`
-	Status   string `mod:"no_space,lcase" default:"7"`
-	Genre    string `mod:"no_space,lcase"`
+	Status   int `mod:"no_space,lcase" default:"0"`
+	Genre    int `mod:"no_space,lcase"`
 }
 
 // GenerateCover to generate css cover.
@@ -27,6 +27,9 @@ func (s *service) GenerateCover(ctx context.Context, data GenerateCoverRequest) 
 	}
 
 	// Get user's anime/manga list.
+	if data.Status == 0 {
+		data.Status = 7
+	}
 	list, code, err := s.mal.GetList(ctx, data.Username, data.Type, data.Status, data.Genre)
 	if err != nil {
 		return "", code, stack.Wrap(ctx, err)
