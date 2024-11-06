@@ -19,16 +19,16 @@ type config struct {
 
 type appConfig struct {
 	Port            string        `envconfig:"PORT" default:"34001" validate:"required" mod:"no_space"`
-	ReadTimeout     time.Duration `envconfig:"READ_TIMEOUT" default:"1m" validate:"required,gt=0"`
-	WriteTimeout    time.Duration `envconfig:"WRITE_TIMEOUT" default:"1m" validate:"required,gt=0"`
-	GracefulTimeout time.Duration `envconfig:"GRACEFUL_TIMEOUT" default:"10s" validate:"required,gt=0"`
+	ReadTimeout     time.Duration `envconfig:"READ_TIMEOUT" default:"10m" validate:"required,gt=0"`
+	WriteTimeout    time.Duration `envconfig:"WRITE_TIMEOUT" default:"10m" validate:"required,gt=0"`
+	GracefulTimeout time.Duration `envconfig:"GRACEFUL_TIMEOUT" default:"1m" validate:"required,gt=0"`
 }
 
 type cacheConfig struct {
 	Dialect  string        `envconfig:"DIALECT" default:"inmemory" validate:"required,oneof=nocache redis inmemory memcache" mod:"no_space,lcase"`
 	Address  string        `envconfig:"ADDRESS"`
 	Password string        `envconfig:"PASSWORD"`
-	Time     time.Duration `envconfig:"TIME" default:"24h" validate:"required,gt=0"`
+	Time     time.Duration `envconfig:"TIME" default:"6h" validate:"required,gt=0"`
 }
 
 type logConfig struct {
